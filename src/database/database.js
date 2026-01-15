@@ -31,4 +31,9 @@ export class DataBase {
 
     
   }
+
+  select(table) {
+    let data = this.#database[table] ?? []
+    return data
+  }
 }
